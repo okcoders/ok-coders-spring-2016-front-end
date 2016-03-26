@@ -60,8 +60,8 @@ An API we will use: http://data.worldbank.org/developers/api-overview?display=
 		</tr>
 		<tr>
 			<td>1.2</td>
-			<td>HTML: Advanced</td>
-			<td>JavaScript: Variables and Data</td>
+			<td>HTML: Why do we need markup? Tables and Forms</td>
+			<td>JavaScript: Variables and Data; A prompting program</td>
 		</tr>
 
 		<tr>
