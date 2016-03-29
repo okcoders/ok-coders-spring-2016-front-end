@@ -1,0 +1,28 @@
+Wiki with no css (Tim Berners-Lee page):
+1. make the first paragraphs color (text color) red
+2. Make the second paragraphs font-size larger
+  - On the same paragraph set the width to half of the parent's width
+  - Set the height to 80px
+  - set overflow to scroll
+3. Make the third paragraphs word-spacing wider
+4. Make the 4th paragraphs background color grey
+5. Make the width of the image in the career section 500px
+
+FizzBuzz:
+- Write a program that prints (console.log()) all numbers from 1 to 100
+- Modify the program to print "Fizz" if the number is divisible by 3
+- Modify the program to print "Buzz" if the number is divisible by 5 (and not 3)
+- Modify the program to print "FizzBuzz" if the number is divisible by 3 and 5
+
+for(var i = 1; i < 101; i++) {
+  // numbers divisible by 3 and 5 are divisible by 15
+  if (i % 15 === 0) {
+    console.log('FizzBuzz', i)
+  } else if (i % 3 === 0) {
+    console.log('Fizz', i)
+  } else if (i % 5 === 0) {
+    console.log('Buzz', i)
+  } else {
+    console.log(i)
+  }
+}
