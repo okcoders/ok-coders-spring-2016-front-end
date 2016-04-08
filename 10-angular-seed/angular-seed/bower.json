@@ -1,0 +1,28 @@
+{
+  "name": "angular-seed",
+  "description": "Very basic angular 1.* project",
+  "main": "index.js",
+  "authors": [
+    "Zach Mays"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/okcoders/ok-coders-spring-2016-front-end",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AngularJS": "angular-latest#^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-moment": "^0.10.3",
+    "moment": "^2.12.0",
+    "angular-lodash": "^0.1.2",
+    "angular-route": "^1.5.3",
+    "angular-resource": "^1.5.3"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mySweetApp">
+<head>
+  <meta charset="UTF-8">
+  <title>A Sweet Application</title>
+  <link rel="stylesheet" type="text/css"
+     href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <ng-include src="'nav/nav.partial.html'"></ng-include>
+    <ng-view></ng-view>
+  </div>
+  <script src='../bower_components/angular/angular.js'></script>
+  <script src='../bower_components/angular-route/angular-route.js'></script>
+  <script src='../bower_components/angular-resource/angular-resource.js'></script>
+  <script src='app.module.js'></script>
+  <script src='app.routes.js'></script>
+  <script src='countries/countries.module.js'></script>
+  <script src='countries/countries.controller.js'></script>
+  <script src='world-bank-api/worldBankApi.module.js'></script>
+  <script src='world-bank-api/countries.resource.js'></script>
+</body>
+</html>

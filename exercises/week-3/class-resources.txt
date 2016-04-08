@@ -1,0 +1,38 @@
+1. go the components section of bootstrap, navigate to the navbar section,
+try to implement a navbar that is fixed to the top
+
+
+1. try to write a function called forIn(upperBound) {}: it should take an upper bound value
+and console.log all numbers up to that value starting from 1
+2. extend it so that it only logs even numbers
+3. change it so that is only logs odd numbers
+
+
+
+review:
+
+types
+operators
+var
+if
+while
+for
+function
+
+functions:
+new scope
+parameters
+crawling up the scope
+hoisting
+functions are values
+recursion
+you can pass a function in as a parameter
+
+
+1. with bootstrap setup a nav, then setup a content area with a sidebar of width
+3, and then a main content area of width 9. Within the content area of width 9,
+make a second row with columns of even split.
+2. try to use an array to model a tic-tac-toe game (how would you store the
+moves of a finished tic-tac-toe game?)
+
+

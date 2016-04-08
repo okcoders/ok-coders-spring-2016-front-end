@@ -95,6 +95,11 @@ An API we will use: http://data.worldbank.org/developers/api-overview?display=
 			<th colspan="3" align="left">Week 4</th>
 		</tr>
 		<tr>
+			<td>4.1</td>
+			<td>Command Line</td>
+			<td>Javascript: Functional</td>
+		</tr>
+		<tr>
 			<th colspan="3" align="left">Week 5</th>
 		</tr>
 		<tr>

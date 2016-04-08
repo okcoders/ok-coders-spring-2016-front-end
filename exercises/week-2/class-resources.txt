@@ -32,7 +32,7 @@ for(var i = 1; i < 101; i++) {
 2. Make the first one 40px tall and make it stick to the top of the page.
   - Give it a grey background.
   - Add a list inside this with a home, contact, and about elements
-3. Make the last one 30px tall
+3. Make the last div 30px tall
 4. Make the second one's position relative (and make it 1500px tall)
 5. Make the third one's position absolute (and make it 40px tall)
  - in chrome tools start futzing around with left, right, top, and bottom values

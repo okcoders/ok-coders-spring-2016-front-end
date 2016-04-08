@@ -1,0 +1,26 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <th>
+      Country
+    </th>
+    <th>
+    Capital City
+    </th>
+    <th>
+      Income Level
+    </th>
+  </thead>
+  <tbody>
+  <tr ng-repeat="wbd in countries.worldBankData">
+    <td>
+      {{ wbd.name }}
+    </td>
+    <td>
+      {{ wbd.capitalCity }}
+    </td>
+    <td>
+      {{ wbd.incomeLevel.value }}
+    </td>
+  </tr>
+  </tbody>
+</table>
