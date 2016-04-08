@@ -2,18 +2,21 @@
 <html>
   <head>
     <!-- add a title to do this document. call it 'Suggestions' -->
+      <title>Suggestions</title>
   </head>
   <body>
     <nav>
       <!-- Turn the following text into an unordered list with each item of the
         list linking to the appropriate web page. -->
-      Index
-      Resources
-      Suggestions
-      People
+        <ul>
+            <li><a href="/index.html">Index</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+            <li><a href="/suggestions.html">Suggestions</a></li>
+            <li><a href="/people.html">People</a></li>
+        </ul>
     </nav>
     <section>
-      Contact Us <!-- Turn this into an h3 element -->
+        <h3> Contact Us</h3> <!-- Turn this into an h3 element -->
 
       <!-- In this section, create a form that allows people to send questions
         to the customer service department of your online business. Your form
@@ -21,19 +24,32 @@
         a dropdown list (select tag) for the type of question [Bug Report,
         Feature Request, Sales, Other] and a text area for the question itself.
 
-        Each element of the form should be on it's own line, and each element
+        Each element of the form should be on its own line, and each element
         should have a label identifying what it is, e.g. Name, Email, Query, and
         Question. Add an action to the form that points to this page, and add a
         Submit button that triggers the action. Naturally, the form won't do
         anything except  reload the page, but it's a start! -->
 
-      Name
+      <form>
+        Name<br>
+          <input type="text" name="name"><br>
 
-      Email
+      Email<br>
+          <input type="text" name="email"><br>
 
-      Query
+      Query<br>
+          <select>
+              <option value="bug_report">Bug Report</option>
+              <option value="feature_request">Feature Request</option>
+              <option value="sales">Sales</option>
+              <option value="other">Other</option>
+          </select><br>
 
-      Question
+      Question<br>
+          <input type="text" name="question"><br>
+        </form>
+
+        <button type="submit" formaction="/resources.html">Submit</button>
 
     </section>
   </body>
