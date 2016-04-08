@@ -12,3 +12,5 @@ function square(number) {
 }
 
 console.log(sumOfSquares(50))
+
+testtesttest
