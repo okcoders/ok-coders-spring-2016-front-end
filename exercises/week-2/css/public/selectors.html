@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Selectors</title>
-  
+
   <!-- what does normalize.css do? try commenting out the line to see the changes -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <style type="text/css">
@@ -18,17 +18,24 @@
       font-size: 12px;
     }
 
-    /* 
+    /*
     The most basic selector targets html tags and is just the name of the tag.
     Target the html tag and add a 50px margin to the top and bottom and a
     10px margin to the sides.
     */
+      html {
+          margin: 50px, 10px, 50px;
+      }
 
     /*
     You can override built-in styling. Style the tag that makes links so
     that it no longer has an underline and the text appears in a normal black
     color.
     */
+      a {
+          text-decoration: none;
+          color: black;
+      }
 
     /*
     Pseudo-selectors let you target a limited subset of a specific tag and
@@ -36,35 +43,62 @@
     Now use the hover pseudo-selector so that link elements turn blue only
     when you mouse over them. But still no underline.
     */
+      a:hover {
+          color: blue;
+      }
 
-    /* 
+    /*
     Tags can target classes, and classes can be applied to many tags.
-    Target the `big` class and set the font size to 32 pixels. 
+    Target the `big` class and set the font size to 32 pixels.
     */
+      .big {
+          font-size: 32px;
+      }
 
     /*
     Target the `container` class so that it has a width of 960 pixels and its
     content is centered on the page. Do not center the text! Center the div.
     */
+      .container {
+          width: 960px;
+          align-items: center;
+      }
 
-    /* 
+    /*
     Tags can target id's, but an id must be unique to a single element.
     Target the `navigation` id and give it some margin, some padding and a nice
     background color
     */
+      #navigation {
+          margin: 2px;
+          padding: 3px;
+          background-color: aquamarine;
+      }
 
     /*
-    id's are not classes! Notice that we have a `footer` classe and a `footer` id.
+    id's are not classes! Notice that we have a `footer` class and a `footer` id.
     Even so, an html element can have both an id and a class, and the can be the same!
-  
+
     Target the `footer` class so that it has a top margin of 20 pixels.
     Target the `footer` id so that it has top padding of 10pixels and a solid black border on the top.
     */
+
+      .footer {
+          margin-top: 20px;
+      }
+
+      #footer {
+          padding-top: 10px;
+          border-top: solid black;
+      }
 
     /*
     You can target more than one selector at a time using commas, e.g. `big, small {...}`
     Target the h1 and h3 tags in the same line and set the text color to green.
     */
+      h1, h3 {
+          color: green;
+      }
 
     /*
     You can combine selectors to target highly specific subsets. Using the period with no spaces
@@ -75,6 +109,13 @@
     black. Do the same for the section whose id is `english-text`. Use the selector combination with
     the period (.)
     */
+      #latin-text p {
+          color: #333333;
+      }
+
+      #english-text p{
+          color: red;
+      }
 
     /*
     You can target descendants of a selector by adding a space between the selectors.
@@ -83,6 +124,9 @@
 
     Target only those paragraphs that are inside a section. Set their font to a serif style.
     */
+      section p {
+          font-family: Georgia, serif;
+      }
 
     /*
     We can be even more specific with our descendant targets. We can target only the direct
@@ -90,9 +134,12 @@
     indefinitely lower. We use the greater than symbol (>) to do this.
 
     Notice that in the English section we have two h3's, one of them in the section itself, and one
-    of them in a div inside the section. Target only the first h3 in that section and set the text 
+    of them in a div inside the section. Target only the first h3 in that section and set the text
     color to be red.
     */
+      #english-text>h3 {
+          color: red;
+      }
 
     /*
     We can target siblings in addition to children. Siblings live on the same tree level. They
@@ -101,6 +148,10 @@
 
     Target the second paragraph in the latin text using the sibling selector and italicize it.
     */
+      p + p {
+          font-style: italic;
+      }
+
 
     /*
     We've already seen pseudo-selectors that let us control when we hover over a link.
@@ -109,12 +160,18 @@
     Add a selector so that when you hover over any pargaph, it turns the background color
     a light grey
     */
+      p:hover {
+          background-color: lightgray;
+      }
 
     /*
     Other pseudo-selectors let us target specific children of an element. Find them on the
-    internet, and target the first child of the ul inside our navigation and set give it 
+    internet, and target the first child of the ul inside our navigation and set give it
     a font size 1.5 times larger than its default (use a relative font size).
     */
+      #navigation > ul > :first-child{
+          font-size: 1.5em;
+      }
 
     /*
     We can combine selectors in very large chains to target extremely specific parts of our
@@ -136,12 +193,12 @@
     }
 
     section#latin-text div.footer > span:hover {
-      
+
       transition-delay: 100ms;
       transition-duration: 1000ms;
       -webkit-transition-delay: 100ms;
       -webkit-transition-duration: 1000ms;
-      
+
       background-color: red;
       color: white;
     }
