@@ -49,6 +49,13 @@ lodash: https://lodash.com/
 angular style guide: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
 nasa api: https://api.nasa.gov/api.html#earth
+## For Free hd pics wish to be used in the client side improvement the following are the free sources.
+
+1. Pixabay
+2. Pexels
+3. Unsplash
+4. Freepik
+4. Pngtree
 
 ## OK Coders Syllabus
 
